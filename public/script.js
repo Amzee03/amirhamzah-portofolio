@@ -8,7 +8,7 @@ const portfolio = [
         thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600",
         description: "Desain konten sosial media informatif untuk branding sekolah SMAIT Al-Qudwah Depok dan desain untuk keperluan klien serta tugas kuliah.",
         role: "Designer",
-        tools: ["Canva", "Photoshop", "Adobe Illustrator", "Medibang Paint Pro"],
+        tools: ["Canva", "Adobe Illustrator", "Medibang Paint Pro"],
         demo: "https://www.figma.com/design/cdlMjvx8thTWZ3rVDSUDIJ/Portofolio-Design-Content?node-id=0-1&t=iZE1qgfIjAgXSeW0-1",
         process: "Proses dimulai dari penentuan tema bulanan, harian, dan event-event khusus, kemudia pembuatan template visual, hingga penjadwalan dan waktu yang tepat untuk memposting konten pada sosial media"
     },
