@@ -4,60 +4,60 @@ let activeSection = 'home';
 // Portfolio data
 const portfolio = [
     {
-        title: "E-Commerce Dashboard",
+        title: "Social Media Content and Graphic Designer",
         thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600",
-        description: "Dashboard analitik untuk platform e-commerce dengan visualisasi data real-time",
-        role: "UI/UX Designer & Front-end Developer",
-        tools: ["Figma", "React", "Tailwind CSS", "Chart.js"],
-        demo: "#",
-        process: "Dimulai dari research user, wireframing, prototype interaktif, hingga implementasi responsive design"
+        description: "Desain konten sosial media informatif untuk branding sekolah SMAIT Al-Qudwah Depok dan desain untuk keperluan klien serta tugas kuliah.",
+        role: "Designer",
+        tools: ["Canva", "Photoshop", "Adobe Illustrator", "Medibang Paint Pro"],
+        demo: "https://www.figma.com/design/cdlMjvx8thTWZ3rVDSUDIJ/Portofolio-Design-Content?node-id=0-1&t=iZE1qgfIjAgXSeW0-1",
+        process: "Proses dimulai dari penentuan tema bulanan, harian, dan event-event khusus, kemudia pembuatan template visual, hingga penjadwalan dan waktu yang tepat untuk memposting konten pada sosial media"
     },
     {
-        title: "Mobile Banking App",
-        thumbnail: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600",
-        description: "Redesign aplikasi mobile banking dengan fokus pada user experience dan kemudahan akses",
-        role: "UI/UX Designer",
-        tools: ["Figma", "Adobe Illustrator", "Principle"],
-        demo: "#",
-        process: "User journey mapping, persona development, usability testing, dan iterasi design berdasarkan feedback"
+        title: "Siaga Bunda",
+        thumbnail: "../src/assets/home-siagabunda.jpg",
+        description: "Design user interface untuk website yang berfokus pada kesehatan ibu hamil.",
+        role: "UI/UX Designer, front-end engineer",
+        tools: ["Figma", "PHP", "Adobe Illustrator"],
+        demo: "https://github.com/SIAGA-BUNDA/siaga-bunda.git",
+        process: "Dimulai dengan menentukan user-requirement, functional dan non-fucntional requirement, kemudian baru dimulai visual design dan prototyping di figma, terakhir yaitu development website"
     },
     {
-        title: "Corporate Website",
-        thumbnail: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600",
-        description: "Website corporate dengan landing page yang engaging dan optimasi SEO",
+        title: "Aplikasi Tag It",
+        thumbnail: "../src/assets/tagit.jpg",
+        description: "Design app Mobile berbasis GPS yang berfungsi untuk mengingatkan pengguna ketika mereka mendekati lokasi tujuan tertentu.",
         role: "Front-end Developer & Logo Designer",
-        tools: ["HTML", "CSS", "JavaScript", "Adobe Illustrator"],
-        demo: "#",
-        process: "Brand identity creation, wireframe development, responsive coding, dan performance optimization"
+        tools: ["Flutter", "Dart", "Figma"],
+        demo: "https://github.com/Luft21/TagIt.git",
+        process: "Merancang user requirement untuk pengguna, design visual app dan logo di figma, develop app dengan tim secara berkala dengan github"
     }
 ];
 
 // Skills data
 const skills = {
-    hard: ['HTML', 'Tailwind CSS', 'JavaScript', 'React', 'Figma', 'Adobe Illustrator'],
-    soft: ['Komunikasi', 'Kolaborasi', 'Manajemen Waktu', 'Problem Solving']
+    hard: ['HTML', 'Tailwind CSS', 'JavaScript', 'Figma', 'Adobe Illustrator', 'Flutter'],
+    soft: ['Komunikasi', 'Kolaborasi Tim', 'Manajemen Waktu', 'Problem Solving']
 };
 
 // Experience data
 const experience = [
     {
-        company: "Tech Innovate Solutions",
-        position: "Senior UI/UX Designer",
-        year: "2022 - Sekarang",
-        description: "Memimpin tim design untuk produk digital B2B, meningkatkan user satisfaction hingga 85%"
+        company: "SMAIT Al-Qudwah Depok",
+        position: "Social Media Content Designer",
+        year: "2023 - 2025",
+        description: "Saya merancang strategi konten dan membuat template untuk design konten harian, mingguan, dan konten di acara-acara khusus."
     },
-    {
-        company: "Digital Creative Agency",
-        position: "Front-end Developer",
-        year: "2020 - 2022",
-        description: "Mengembangkan website responsif dan aplikasi web untuk klien dari berbagai industri"
-    },
-    {
-        company: "Startup Hub Indonesia",
-        position: "Junior Designer",
-        year: "2019 - 2020",
-        description: "Mendesign interface untuk aplikasi mobile dan web, serta membuat brand identity"
-    }
+    // {
+    //     company: "Digital Creative Agency",
+    //     position: "Front-end Developer",
+    //     year: "2020 - 2022",
+    //     description: "Mengembangkan website responsif dan aplikasi web untuk klien dari berbagai industri"
+    // },
+    // {
+    //     company: "Startup Hub Indonesia",
+    //     position: "Junior Designer",
+    //     year: "2019 - 2020",
+    //     description: "Mendesign interface untuk aplikasi mobile dan web, serta membuat brand identity"
+    // }
 ];
 
 // Scroll to section function
@@ -80,11 +80,32 @@ function setActiveSection(sectionId) {
     });
 }
 
+//direct ke wa
+function openWhatsApp() {
+    const waLink = "https://wa.me/6285894744507?text=Halo%2C%20saya%20tertarik%20dengan%20portofolio%20Anda";
+    window.open(waLink, "_blank");
+}
+
+//direct ke email
+    function sendEmail() {
+        const email = "2003amirhamzah@gmail.com";
+        const subject = "Halo Amir";
+        const body = "Saya tertarik dengan portofolio Anda.";
+        
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+    }
+
+//direct ke linkedin
+function openLinkedIn() {
+    const linkedInUrl = "https://www.linkedin.com/in/hamzah-amir";
+    window.open(linkedInUrl, "_blank"); // buka di tab baru
+}
+
 // Download CV function
-function downloadCV() {
-    // You can replace this with actual CV file path
-    alert('CV download functionality - silakan masukkan path CV PDF Anda');
-    // window.open('path-to-your-cv.pdf', '_blank');
+function openCV() {
+    const cvUrl = "https://drive.google.com/file/d/1-M4y2SAny_V-u6f8WieFEbj5jeaeiZqD/view?usp=sharing";
+    window.open(cvUrl, "_blank"); // buka di tab baru
 }
 
 // Render portfolio items
@@ -124,7 +145,7 @@ function renderPortfolio() {
                     <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                     </svg>
-                    Lihat Demo
+                    Lihat Project
                 </button>
             </div>
         `;
